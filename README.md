@@ -64,39 +64,7 @@ Abre **http://localhost:5173**
 La app funciona **sin configurar nada** (usa respuestas locales predefinidas).
 Para que Sr. Coffee converse de verdad con Gemini, sigue estos pasos:
 
-### 1. Genera tu API Key
 
-1. Ve a [aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
-2. Inicia sesión con tu cuenta de Google
-3. Click en **"Crear clave de API"**
-4. Copia la clave generada
-
-### 2. Configúrala en Vercel
-
-1. Entra a tu proyecto en [vercel.com](https://vercel.com)
-2. Ve a **Settings → Environment Variables**
-3. Agrega una nueva variable:
-
-| Campo | Valor |
-|---|---|
-| **Name** | `GEMINI_API_KEY` |
-| **Value** | *(pega aquí tu clave de API)* |
-| **Environment** | Production, Preview, Development |
-
-4. Click **Save**
-5. Ve a **Deployments** → menú `⋮` del último deploy → **Redeploy**
-
-### 3. (Opcional) Configúrala para desarrollo local
-
-Crea un archivo `.env.local` en la raíz del proyecto (basado en `.env.example`):
-
-```bash
-GEMINI_API_KEY=tu_clave_aqui
-```
-
-> **Nunca subas `.env.local` ni tu API key a GitHub.** Ya está incluido en `.gitignore`.
-
----
 
 ##  Cómo funciona el fallback
 
@@ -109,13 +77,6 @@ GEMINI_API_KEY=tu_clave_aqui
 
 ---
 
-##  Despliegue en Vercel
-
-1. Sube el proyecto a un repositorio (GitHub, GitLab, etc.)
-2. En Vercel: **New Project → Import** tu repositorio
-3. Vercel detecta automáticamente Vite — no necesitas configurar nada más
-4. Agrega la variable `GEMINI_API_KEY` (ver sección anterior)
-5. Deploy 
 
 ---
 
