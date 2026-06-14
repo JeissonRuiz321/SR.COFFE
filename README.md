@@ -4,7 +4,7 @@ Chatbot conversacional con diseño de cafetería. Flujo completo de Landing → 
 
 ---
 
-## ✨ Características
+# Características
 
 - Landing con scroll animado y demos de conversación
 - Login temático con animación de carga
@@ -18,7 +18,7 @@ Chatbot conversacional con diseño de cafetería. Flujo completo de Landing → 
 
 ---
 
-## 📁 Estructura
+# Estructura
 
 ```
 SrCoffee/
@@ -43,7 +43,7 @@ SrCoffee/
 
 ---
 
-## 🚀 Instalación local
+# Instalación local
 
 ```bash
 npm install
@@ -52,14 +52,14 @@ npm run dev
 
 Abre **http://localhost:5173**
 
-## 🔑 Credenciales de acceso (Login)
+# Credenciales de acceso (Login)
 
 - Usuario: `coffeelover`
 - Contraseña: `1234`
 
 ---
 
-## 🤖 Conectar Gemini (respuestas reales con IA)
+# Conectar Gemini (respuestas reales con IA)
 
 La app funciona **sin configurar nada** (usa respuestas locales predefinidas).
 Para que Sr. Coffee converse de verdad con Gemini, sigue estos pasos:
@@ -94,11 +94,11 @@ Crea un archivo `.env.local` en la raíz del proyecto (basado en `.env.example`)
 GEMINI_API_KEY=tu_clave_aqui
 ```
 
-> ⚠️ **Nunca subas `.env.local` ni tu API key a GitHub.** Ya está incluido en `.gitignore`.
+> **Nunca subas `.env.local` ni tu API key a GitHub.** Ya está incluido en `.gitignore`.
 
 ---
 
-## 🧠 Cómo funciona el fallback
+##  Cómo funciona el fallback
 
 `SrCoffee.jsx` intenta llamar a `/api/chat` (Gemini). Si:
 - No hay `GEMINI_API_KEY` configurada, o
@@ -109,17 +109,17 @@ GEMINI_API_KEY=tu_clave_aqui
 
 ---
 
-## 🌐 Despliegue en Vercel
+##  Despliegue en Vercel
 
 1. Sube el proyecto a un repositorio (GitHub, GitLab, etc.)
 2. En Vercel: **New Project → Import** tu repositorio
 3. Vercel detecta automáticamente Vite — no necesitas configurar nada más
 4. Agrega la variable `GEMINI_API_KEY` (ver sección anterior)
-5. Deploy 🎉
+5. Deploy 
 
 ---
 
-## 🛠️ Stack
+##  Stack
 
 - React 18 + Vite 5
 - Vercel Serverless Functions
